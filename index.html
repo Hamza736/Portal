@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+
+    <div class="background">
+        <div class="container">
+
+            <!-- logo -->
+            <div class="logo-container">
+                <img src="./Assests/download.jpeg" alt="Logo" class="logo"> 
+            </div>
+
+            <!-- Sign In Form -->
+            <div class="form-container">
+                <div id="signInForm">
+                    <h2 class="form-title">Sign in</h2>
+                    <p class="form-subtitle">Stay updated on your professional world</p>
+                    <div class="form-group">
+                        <input type="email" id="signInEmail" name="email" placeholder=" Your Email" required>
+                    </div>
+
+                 
+
+                    <div class="form-group">
+                        <input type="password" id="signInPassword" name="password" placeholder="Password" required>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Sign In</button>
+                    <p class="switch-form">Don't have an account? <a href="#" id="showSignUp">Sign Up</a></p>
+                </div>
+
+                 <!-- Sign up Form -->
+                <div id="signUpForm" style="display: none;">
+                    <h2 class="form-title">Sign up</h2>
+                    <p class="form-subtitle">Join us and start your journey</p>
+                    <div class="form-group">
+                        <input type="text" id="signUpName" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="signUpEmail" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signUpPassword" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="signUpConfirmPassword" name="confirmPassword"
+                            placeholder="Confirm Password" required>
+                    </div>
+
+                    <!-- DROP DOWN Start -->
+                    <div class="form-group">
+
+                        <!-- Select a course-->
+                        <select id="courseDropdown" name="courseDropdown" onchange="showPayment()">
+                            <option value="">Select a course</option>
+                            <option value="Web Development">Web Development</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Graphic Design">Graphic Design</option>
+                        </select>
+                    </div>
+
+                    <!--Course Payment: -->
+
+                    <input type="text" id="payment" name="payment" placeholder="Course Payment" readonly>
+                    <!-- DROP DOWN END -->
+
+
+                    <div class="form-group">
+                        <input type="file" id="fileUpload" name="fileUpload">
+                    </div>
+
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                    <p class="switch-form">Already have an account? <a href="#" id="showSignIn">Sign In</a></p>
+                </div>
+            </div>
+            
+            <div class="social-login">
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="#" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script> 
+
+</body>
+
+</html>
