@@ -1,32 +1,44 @@
+
 // JavaScript to toggle between Sign In and Sign Up forms
 
 document.addEventListener('DOMContentLoaded', () => {
     const signInForm = document.getElementById('signInForm');
     const signUpForm = document.getElementById('signUpForm');
+    const forgotPasswordForm = document.getElementById('forgotPasswordForm');
     const showSignUp = document.getElementById('showSignUp');
     const showSignIn = document.getElementById('showSignIn');
+    const showForgotPassword = document.getElementById('showForgotPassword');
+    const backToSignIn = document.getElementById('backToSignIn');
 
     showSignUp.addEventListener('click', (e) => {
         e.preventDefault();
         signInForm.style.display = 'none';
         signUpForm.style.display = 'block';
+        forgotPasswordForm.style.display = 'none';
     });
 
     showSignIn.addEventListener('click', (e) => {
         e.preventDefault();
         signInForm.style.display = 'block';
         signUpForm.style.display = 'none';
+        forgotPasswordForm.style.display = 'none';
+    });
+
+    showForgotPassword.addEventListener('click', (e) => {
+        e.preventDefault();
+        forgotPasswordForm.style.display = 'block';
+        signInForm.style.display = 'none';
+        signUpForm.style.display = 'none';
+    });
+
+    backToSignIn.addEventListener('click', (e) => {
+        e.preventDefault();
+        signInForm.style.display = 'block';
+        signUpForm.style.display = 'none';
+        forgotPasswordForm.style.display = 'none';
     });
 });
 
-function togglePasswordVisibility(fieldId) {
-    const passwordField = document.getElementById(fieldId);
-    if (passwordField.type === 'password') {
-        passwordField.type = 'text';
-    } else {
-        passwordField.type = 'password';
-    }
-}
 
 
 

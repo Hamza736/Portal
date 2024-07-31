@@ -1,219 +1,20 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./Assests/main\ bg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.main{
-    display: inline-flex;
-width: 50%;
-height: 80%;
-border-radius: 30px;
-border: 2px solid red;
-
-
-}
-.content{
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(14, 47, 59);
-    border-radius: 30px;
-
-}
-
-.logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.logo img{
-    width: 120px;
-    height: 120px;
-    margin-top: 30px;
-
-}
-
-h2{
-    font-size: 45px;
-    margin-top: 50px;
-    color: white;
-    
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-label {
-    margin-bottom: 5px;
-    align-items: start;
-}
-
-input {
-    width: 75%;
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-   
-}
-
-button {
-    width: 75%;
-    padding: 10px;
-    border: none;
-    border-radius: 25px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-p {
-    margin-top: 20px;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-} */
-
-/* 
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-     height: 100%;
-    /*display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-
-.background {
-    background-image: url(./Assests/main\ bg.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
-
-.logo-container {
-    margin-bottom: 20px;
-}
-
-.logo {
-    max-width: 100px; 
-}
-
-.form-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.form-subtitle {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.forgot-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 12px;
-    color: #007BFF;
-    text-decoration: none;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.btn-primary {
-    width: 100%;
-    padding: 15px;
-    background-color: #007BFF;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    background-color:
-}
-#signUpForm {
-    display: none;
-} */
-
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  
     height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center;*/
+
 } 
+/* .abc123{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .background {
-    background-image: url(./Assests/main\ bg.jpeg);
+    background-image: url(./Assests/55313.jpg);
+    background-color: #1d1919f6;
+    background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -224,9 +25,14 @@ body, html {
 }
 
 .container {
-    background-color: #fff;
+
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 2px solid var(--white-color);
+    border-radius: 3rem;
+    backdrop-filter: blur(150px);
+
+
     padding: 40px;
-    border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
@@ -244,11 +50,12 @@ body, html {
 .form-title {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #333;
+    color: white;
 }
 
 .form-subtitle {
-    color: #777;
+    /* color: #777; */
+    color: rgb(224, 210, 210);
     font-size: 14px;
     margin-bottom: 20px;
 }
@@ -262,22 +69,26 @@ input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     padding: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 14px;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid rgb(223, 210, 210);
+    outline: none;
+
 }
 #fileUpload{
     padding-top: 15px;
 }
 #courseDropdown{
     width: 100%;
-    padding: 15px;
+    padding: 15px ;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 25px;
     font-size: 14px;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid rgb(224, 210, 210);
+    outline: none;
+
 }
 .forgot-password {
     position: absolute;
@@ -304,12 +115,18 @@ input[type="text"], input[type="password"], input[type="email"] {
 }
 
 
+#forgotPasswordForm {
+    display: none;
+}
+
+
+
 .btn-primary {
     width: 100%;
     padding: 15px;
     background-color: #007BFF;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -321,7 +138,7 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 .switch-form {
     margin-top: 20px;
-    color: #333;
+    color: #b1a4a4;
     font-size: 14px;
 }
 
@@ -349,7 +166,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: #555;
+    color: #7c7676;
     text-decoration: none;
 }
 
@@ -361,3 +178,42 @@ input[type="text"], input[type="password"], input[type="email"] {
 
 
 
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+
+    .btn-primary {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .file-upload {
+        padding: 5px;
+    }
+}
