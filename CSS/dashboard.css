@@ -1,0 +1,122 @@
+ /* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+ /* Header and Logo */
+.header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.site-title {
+    color: white;
+    font-size: 24px;
+}
+
+/* Students Data Section */
+.students-data {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #00000067;
+    background-blend-mode: overlay;
+    margin-top: 10px;
+    border: 2px;
+    outline: none;
+    border-radius: 15px;
+    margin: 10px 20px;
+    
+}
+
+.data-box {
+    width: 15%;
+    text-align: center;
+    /* justify-content: space-between; */
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    background-color: hsla(0, 7%, 92%, 0.815);
+    border: 2px solid var(--white-color);
+    border-radius: 3rem;
+    backdrop-filter: blur(150px);
+    margin: 0 10px;
+    /* flex: 1; */
+
+}
+
+.data-box h4 {
+    margin-bottom: 10px;
+}
+
+.data-box i {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Two Column Section */
+.two-column-section {
+    display: flex;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-section {
+    border: 2px solid;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-section p {
+    margin-top: 10px;
+}
+
+.about-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.discipline-section {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding: 20px;
+    border: 2px solid ;
+    margin-left: 30px;
+}
+
+.course-btn {
+    display: inline-block;
+    width: 20%;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
