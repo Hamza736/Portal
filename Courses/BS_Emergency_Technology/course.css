@@ -28,7 +28,7 @@
 .sbj-btn{
   display: inline-block;
   width: 20%;
-  margin: 5px;
+  margin: 5px 0;
   padding: 10px 20px;
   background-color: green;
   color: white;

@@ -63,10 +63,9 @@ body, html {
 
 /* Search Bar */
   .search-bar {
-
     justify-content: center;
     padding: .5rem;
-    margin: .5rem;
+    /* margin: .5rem; */
     background-color: #f4f4f4;
     border-radius: 25px;
     border: 2px solid #3f3d3d;
